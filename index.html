@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alfredo PORTO</title>
+  <link href="/stylee.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js"></script>
+</head>
+<body>
+<div class="blocks">
+  <div class="block init" data-block-section="1" data-href="home">
+    <div class="block__title">Home</div>
+    <div class="block__number">01</div>
+  </div>
+  <div class="block init" data-block-section="2" data-href="skills">
+    <div class="block__title">Skills</div>
+    <div class="block__number">02</div>
+  </div>
+  <div class="block init" data-block-section="3" data-href="Experiences">
+    <div class="block__title">Exp</div>
+    <div class="block__number">03</div>
+  </div>
+  <div class="block init" data-block-section="4" data-href="Projects">
+    <div class="block__title">Projects</div>
+    <div class="block__number">04</div>
+  </div>
+  <div class="block init" data-block-section="5" data-href="Contacts">
+    <div class="block__title">Contact</div>
+    <div class="block__number">05</div>
+  </div>
+</div>
+<main data-scroll-container>
+  <div class="wrap" data-scroll-section>
+    <section class="section home" data-block-section="1" id="home">
+      <h1>Hello</h1>
+      <h2>Hello</h2>
+      <p> babibuba</p>
+      <div class="box">
+        <div class="rectangle">          
+        </div></div>
+
+    </section>
+    <section class="section skills" data-block-section="2" id="skills">
+      <h1>HOME</h1>
+      <p> babibuba</p>
+    </section>
+    <section class="section Experiences" data-block-section="3" id="Experiences">
+      <h1>HOME</h1>
+      <p> babibuba</p>
+    </section>
+    <section class="section Projects" data-block-section="4" id="Projects">
+      <h1>HOME</h1>
+      <p> babibuba</p>
+    </section>
+    <h1>HOME</h1>
+    <p> babibuba</p>
+    <section class="section Contact" data-block-section="5" id="Contact">
+      <h1>HOME</h1>
+    <p> babibuba</p>
+    </section>
+  </div>
+</main>
+</body>
+<script>
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
+    direction: "horizontal",
+  });
+
+  let blocks = document.querySelectorAll(".block[data-block-section]");
+  scroll.on("scroll", (args) => {
+    blocks.forEach((block) => {
+      let attr = block.getAttribute("data-block-section");
+      let section = document.querySelector(
+        `section[data-block-section='${attr}']`
+      );
+
+      if (section.getBoundingClientRect().left <= block.offsetWidth * attr) {
+        block.classList.add("fixed");
+        block.classList.remove("init");
+        block.classList.remove("active");
+        block.style.left = "";
+      } else if (
+        section.getBoundingClientRect().left >=
+        window.innerWidth - block.offsetWidth * (blocks.length - attr)
+      ) {
+        block.classList.add("init");
+        block.classList.remove("active");
+        block.classList.remove("fixed");
+        block.style.left = "";
+      } else {
+        block.classList.add("active");
+        block.classList.remove("init");
+        block.classList.remove("fixed");
+      }
+
+      if (block.classList.contains("active")) {
+        block.style.left = section.getBoundingClientRect().left + "px";
+      }
+      
+    });
+  });
+</script>
+</body>
+</html>
