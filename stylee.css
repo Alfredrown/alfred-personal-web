@@ -191,6 +191,11 @@ section{
     letter-spacing: 0;
 
 }
+#home p{
+    position: fixed;
+    font-family: "Plus Jakarta Sans";
+
+}
 .box {
     width: auto;
     height: auto;
@@ -199,8 +204,105 @@ section{
 .box .rectangle {
     position: fixed;
     width: 56px;
-    height: 28px;
-    top: 44px;
-    left: 280px;
+    height: 18px;
+    top: 60px;
+    left: 294px;
     background-color: #ffffff;
+}
+.box .rectangle1 {
+    position: fixed;
+    width: 44px;
+    height: 18px;
+    top: 42px;
+    left: 350px;
+    background-color: #ccff00;
+}
+.box .rectangle2 {
+    position: fixed;
+    width: 18px;
+    height: 18px;
+    top: 24px;
+    left: 394px;
+    background-color: #ffffff;
+}
+.box .rectangle3 {
+    position: fixed;
+    width: 18px;
+    height: 18px;
+    top: 60px;
+    left: 394px;
+    background-color: #ffffff;
+}
+
+.frame{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:8px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left:246px;
+    top:100px;
+}
+.frame .text-wrapper {
+    position: relative;
+    width: fit-content;
+    font-family: "Plus Jakarta Sans";
+    color: #ffffff;
+    font-weight: 650;
+}
+
+.frame .div {
+    position: relative;
+    width: fit-content;
+    color:#ccff00;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 650;
+    font-size: 28px;
+}
+.frame .div2 {
+    position: relative;
+    width: fit-content;
+    color:#ffff;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 250px;
+    font-size: 28px;
+}
+.label {
+    width: fit-content;
+    height: fit-content;
+}
+
+.label .i-m-an-undergraduate {
+    position: fixed;
+    width: 399px;
+    top: 240px;
+    left: 48px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+.pictures{
+    width: fit-content;
+    height: fit-content;
+}
+.pictures .vector{
+    position: fixed;
+    top:0px;
+    width: 777px;
+    height: 705px;
+    left:200px;
+
+}
+.pictures .vector2{
+    position: fixed;
+    top:0px;
+    width: 582.75px;
+    height: 528.75px;
+    left:700px;
 }
