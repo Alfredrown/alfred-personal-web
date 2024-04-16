@@ -275,7 +275,7 @@ section{
 }
 
 .label .i-m-an-undergraduate {
-    position: fixed;
+    position: relative;
     width: 399px;
     top: 240px;
     left: 48px;
@@ -294,15 +294,38 @@ section{
 .pictures .vector{
     position: fixed;
     top:0px;
-    width: 777px;
-    height: 705px;
-    left:200px;
+    left:0px;
+    width:20%;
+    height:100%;
 
 }
 .pictures .vector2{
     position: fixed;
     top:0px;
-    width: 582.75px;
-    height: 528.75px;
-    left:700px;
+    left:0px;
+    width:25%;
+    height:100%;
 }
+.pictures .vector3{
+    position: fixed;
+    top: 40px;
+    left:740px;
+    width:7.5%;
+    height: 7.5%;
+}
+.pictures .segitiga{
+    position: fixed;
+    top: 54px;
+    left:776px;
+    width:5%;
+    height:5%;
+}
+.pictures .fotodiri{
+    position: fixed;
+    top: 40px;
+    left:0px;
+    width: 25%;
+    height: 100%;
+}
+
+
