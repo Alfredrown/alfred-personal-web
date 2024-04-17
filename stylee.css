@@ -145,6 +145,7 @@ section{
 
 }
 .block[data-block-section="5"].fixed {
+    width: max-content;
     left:10rem;
     background: #ffb600;
 
@@ -156,6 +157,10 @@ section{
 }
 .section[data-block-section="1"]{
     background: #ea30a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the height to 100vh */
 }
 .section[data-block-section="2"]{
     background:#f33a45;
@@ -170,29 +175,38 @@ section{
     background:#ffb600
 }
 
+.home{
+    display: flex;
+    align-content: flex-start;
+    align-items: center; /* Align items vertically */
+    
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 260px;
+    margin-bottom: 20px;
+}
 #home h1{
+    position: flex;
     color:white;
     font-family: Navigation;
-    position: fixed;
-    top: 20px;
-    left: 52px;
     font-size: 64px;
     letter-spacing: 0;
     line-height: normal;
 }
 #home h2{
-    position: fixed;
-    top: 24px;
-    left: 48px;
+    position: flex;
     font-family: navigation;
     -webkit-text-stroke: 2px #ffffff;
     color: transparent;
     font-size: 64px;
     letter-spacing: 0;
+    z-index: -1;
+    line-height: normal;
 
 }
 #home p{
-    position: fixed;
+    position: flex;
     font-family: "Plus Jakarta Sans";
 
 }
@@ -205,7 +219,7 @@ section{
     position: fixed;
     width: 56px;
     height: 18px;
-    top: 60px;
+    top: 60px;  
     left: 294px;
     background-color: #ffffff;
 }
@@ -239,30 +253,30 @@ section{
     flex-direction: column;
     align-items: flex-start;
     gap:8px;
-    position: relative;
+    position: flex;
     width: 100%;
     height: 100%;
-    left:246px;
-    top:100px;
+   
 }
 .frame .text-wrapper {
-    position: relative;
+    position: flex;
     width: fit-content;
     font-family: "Plus Jakarta Sans";
     color: #ffffff;
     font-weight: 650;
+    
 }
 
 .frame .div {
-    position: relative;
+    position: flex;
     width: fit-content;
     color:#ccff00;
     font-family: "Plus Jakarta Sans";
     font-weight: 650;
-    font-size: 28px;
+    font-size: 200%;
 }
 .frame .div2 {
-    position: relative;
+    position: flex;
     width: fit-content;
     color:#ffff;
     font-family: "Plus Jakarta Sans";
@@ -275,10 +289,8 @@ section{
 }
 
 .label .i-m-an-undergraduate {
-    position: relative;
-    width: 399px;
-    top: 240px;
-    left: 48px;
+    position: flex;
+    width: 400px;
     font-family: "Inter-Medium", Helvetica;
     font-weight: 300;
     color: #ffffff;
@@ -290,21 +302,22 @@ section{
 .pictures{
     width: fit-content;
     height: fit-content;
+    position: relative;
 }
 .pictures .vector{
-    position: fixed;
-    top:0px;
-    left:0px;
-    width:20%;
-    height:100%;
+    position: relative;
+    bottom:252px;
+    left:120px;
+    width:75%;
+    height:85%;
 
 }
 .pictures .vector2{
-    position: fixed;
-    top:0px;
-    left:0px;
-    width:25%;
-    height:100%;
+    position: relative;
+    bottom:1150px;
+    left:424px;
+    width:50%;
+    height:50%;
 }
 .pictures .vector3{
     position: fixed;
@@ -320,12 +333,35 @@ section{
     width:5%;
     height:5%;
 }
-.pictures .fotodiri{
+/* .pictures .fotodiri{
     position: fixed;
     top: 40px;
     left:0px;
     width: 25%;
     height: 100%;
+} */
+
+
+#skills h1{
+    color:white;
+    font-family: Navigation;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    bottom: 248px;
+    left:52px;
+    
 }
+#skills h2{
+    font-family: navigation;
+    -webkit-text-stroke: 2px #ffffff;
+    color: transparent;
+    font-size: 64px;
+    letter-spacing: 0;
 
-
+}
+#skills p{
+    position: fixed;
+    font-family: "Plus Jakarta Sans";
+}
