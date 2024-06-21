@@ -40,8 +40,6 @@ section{
     position: relative;
     display:flex;
     left: -200px;
-    align-items: center;;
-    justify-content: center;;
 }
 
 
@@ -145,11 +143,8 @@ section{
 
 }
 .block[data-block-section="5"].fixed {
-    width: max-content;
     left:10rem;
     background: #ffb600;
-
-
 }
 .block__title {
     position: relative;
@@ -158,8 +153,7 @@ section{
 .section[data-block-section="1"]{
     background: #ea30a1;
     display: flex;
-    align-items: center;
-    justify-content: center;
+   
     height: 100vh; /* Set the height to 100vh */
 }
 .section[data-block-section="2"]{
@@ -173,14 +167,13 @@ section{
 }
 .section[data-block-section="5"]{
     background:#ffb600
+    
 }
 
 .home{
     display: flex;
     align-content: flex-start;
-    align-items: center; /* Align items vertically */
     
-    justify-content: center;
     flex-direction: column;
     padding-top: 20px;
     padding-left: 260px;
@@ -195,15 +188,15 @@ section{
     line-height: normal;
 }
 #home h2{
-    position: flex;
+    position: relative;
     font-family: navigation;
     -webkit-text-stroke: 2px #ffffff;
     color: transparent;
     font-size: 64px;
     letter-spacing: 0;
-    z-index: -1;
+    bottom: 56px;
+    left:16px
     line-height: normal;
-
 }
 #home p{
     position: flex;
@@ -299,48 +292,49 @@ section{
     letter-spacing: 0;
     line-height: 24px;
 }
-.pictures{
-    width: fit-content;
-    height: fit-content;
-    position: relative;
-}
 .pictures .vector{
-    position: relative;
-    bottom:252px;
-    left:120px;
-    width:75%;
-    height:85%;
-
+    position: fixed;
+    top:15%;
+    left:0%;
+    width: 25%;
+    height: 100%;
 }
 .pictures .vector2{
-    position: relative;
-    bottom:1150px;
-    left:424px;
-    width:50%;
-    height:50%;
+    position: fixed;
+    top:0%;
+    left:0%;
+    width: 25%;
+    height: 100%;
 }
+
 .pictures .vector3{
     position: fixed;
-    top: 40px;
-    left:740px;
+    top: 5.6%;
+    left:11.64%;
     width:7.5%;
     height: 7.5%;
 }
 .pictures .segitiga{
     position: fixed;
-    top: 54px;
-    left:776px;
+    top: 8%;
+    left:12%;
     width:5%;
     height:5%;
 }
-/* .pictures .fotodiri{
+.pictures .fotodiri{
     position: fixed;
-    top: 40px;
-    left:0px;
+    top: 0%;
+    left:0%;
     width: 25%;
     height: 100%;
-} */
+}
 
+#skills{
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    
+}
 
 #skills h1{
     color:white;
@@ -349,19 +343,111 @@ section{
     letter-spacing: 0;
     line-height: normal;
     position: relative;
-    bottom: 248px;
-    left:52px;
+    margin-left: 8%;
+    margin-top: 2.4%;
+    height: fit-content;
     
 }
 #skills h2{
+    position: absolute;
     font-family: navigation;
     -webkit-text-stroke: 2px #ffffff;
     color: transparent;
+    margin-left: 8%;
+    margin-top: 2.8%;
     font-size: 64px;
     letter-spacing: 0;
 
 }
-#skills p{
-    position: fixed;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 2%;
+    width: 80%;
+    margin-left: 4%;
+}
+
+.skill {
+    flex: 1;
     font-family: "Plus Jakarta Sans";
+    font-size: 28px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column; /* Ensure items are stacked vertically */
+    font-weight: 650;
+    padding-top: 4%;
+    max-width: 40%;
+    margin: 0 2%;
+}
+
+.skill p {
+    font-weight: 600;
+    color: #ffe8b0;
+    min-width: 60px;
+    height: fit-content;
+    padding-bottom: 8%;
+}
+
+.skill ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; /* Ensure items are in row */
+    list-style-type: none; /* Ensure no default list styles */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.skill li {
+    margin-top: 2.8%;
+    margin-right: 4%;
+    padding: 8px;
+    border: 4px solid;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row; /* Ensure items are in row */
+}
+
+.creativemedia {
+    flex: 1;
+    font-family: "Plus Jakarta Sans";
+    font-size: 28px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-weight: 650;
+    padding-top: 4%;
+    max-width: 45%;
+    margin: 0 2%;
+}
+
+.creativemedia p {
+    font-weight: 600;
+    color: #ffe8b0;
+    min-width: 60px;
+    height: fit-content;
+    padding-bottom: 8%;
+}
+
+.creativemedia ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; /* Ensure items are in row */
+    list-style-type: none; /* Ensure no default list styles */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.creativemedia li {
+    margin-top: 2.8%;
+    margin-right: 4%;
+    padding: 8px;
+    border: 4px solid;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row; /* Ensure items are in row */
 }
